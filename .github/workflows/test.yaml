@@ -26,6 +26,5 @@ jobs:
         run: |
           poetry run black --check .
           poetry run isort --check .
-          mypy --install-types
           poetry run mypy .
 
