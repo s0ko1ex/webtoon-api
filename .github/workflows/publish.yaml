@@ -27,5 +27,5 @@ jobs:
       - name: Run tests
         run: |
           poetry config pypi-token.pypi ${{secrets.PYPI_TOKEN}}
-          poetry build
-          poetry publish
+          poetry build --no-interaction
+          poetry publish --no-interaction
